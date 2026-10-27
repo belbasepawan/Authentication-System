@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main class="card wide">
+        <div class="brand">
+            <div class="logo">&lt;/&gt;</div>
+            <div>
+                <div class="brand-name">PRINTED<span style="color:#5cffb1">CAT</span></div>
+                <div class="brand-sub">DASHBOARD</div>
+            </div>
+        </div>
+
+        <div class="status">AUTHENTICATED</div>
+        <h1>Access granted.</h1>
+        <p class="description">
+            Your session has been verified by the server.
+        </p>
+
+        <section class="user-box">
+            <div class="user-label">SIGNED IN AS</div>
+            <div class="username"><%= username %></div>
+        </section>
+
+        <form action="/logout" method="POST">
+            <button class="secondary" type="submit">Logout↗</button>
+        </form>
+
+        <div class="footer">SECURE AREA · AUTHORIZED ACCESS ONLY</div>
+    </main>
+</body>
+</html>
